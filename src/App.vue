@@ -21,9 +21,6 @@
       MyContent,
       MyFooter,
       MyCount
-    },
-    mounted(){
-      console.log(this);
     }
   }
 </script>

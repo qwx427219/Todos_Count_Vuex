@@ -6,7 +6,8 @@ export default function (store) {
   // state.todosAbout.todos = todos
   // store.replaceState(state)
 
-  store.commit('todosAbout/UPDATE_TODOS', todos)
+  if (todos)
+    store.commit('todosAbout/UPDATE_TODOS', todos)
 
   store.subscribe((mutation, state) => {
     if (mutation.type.startsWith('todosAbout')) {
